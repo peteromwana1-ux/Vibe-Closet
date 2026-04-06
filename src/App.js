@@ -36,7 +36,7 @@ function Navbar() {
 /* ================= MAIN APP ================= */
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -48,7 +48,7 @@ function App() {
         <Route path="/addcloset" element={<Addcloset />} />
         <Route path="/makepayment" element={<MpesaPayment />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
