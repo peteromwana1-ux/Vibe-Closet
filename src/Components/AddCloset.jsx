@@ -52,7 +52,12 @@ setError(error.message)
         placeholder='product name' 
         onChange={(e)=>setProductName(e.target.value)}
         required/><br /><br />
-      
+        
+
+        <textarea 
+        placeholder='product description'
+        onChange={(e)=>setProductDescription(e.target.value)}
+        required></textarea><br /><br />
 
 
         <input 
