@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const AddCloset  = () => {
   // declaring state variables
   const[product_name,setProductName]= useState("")
-  const[product_description,setProductDescription]= useState("")
+  
   const[product_cost,setProductCost]= useState("")
   const[product_photo,setProductPhoto]= useState("")
 // status messages
@@ -20,7 +20,6 @@ const[error,setError]= useState("")
 try{
 // retrieving product data
     const formData= new FormData();
-    formData.append("product_description",product_description)
     formData.append("product_name",product_name)
     formData.append("product_cost",product_cost)
     formData.append("product_photo",product_photo)
@@ -54,10 +53,7 @@ setError(error.message)
         required/><br /><br />
         
 
-        <textarea 
-        placeholder='product description'
-        onChange={(e)=>setProductDescription(e.target.value)}
-        required></textarea><br /><br />
+        
 
 
         <input 
