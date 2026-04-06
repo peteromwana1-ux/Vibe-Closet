@@ -32,10 +32,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 /* App.css */
 
 body {
@@ -115,13 +117,56 @@ body {
 .hero-right img {
   width: 400px;
   object-fit: contain;
-} 
+}
 
 #img {
-  background-color: #f6d66b  ;
+  background-color: #f6d66b;
 }
-Link{
+
+Link {
   text-underline-offset: none;
   text-underline-position: none;
-  -ms-text-underline-position: none ;
+  -ms-text-underline-position: none;
+}
+
+/* Product Cards */
+.product_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  min-height: 400px;
+}
+
+.card-margin {
+  margin: 10px;
+}
+
+/* Form Inputs Styling */
+input, textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input[type="submit"] {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e55a5a;
 }

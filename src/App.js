@@ -6,6 +6,7 @@ import Signin from "./Components/Signin";
 import Signup from "./Components/Signup";
 import Cart from "./Components/Cart";
 import Addcloset from "./Components/AddCloset";
+import MpesaPayment from "./Components/MakePayments";
 
 /* ================= NAVBAR ================= */
 function Navbar() {
@@ -13,16 +14,16 @@ function Navbar() {
     <nav className="navbar">
       <h2>Vibe Closet
       </h2>
- <div className="logo">
+      <div className="logo">
         <div className="logo-box"></div>
       </div>
 
       <div className="nav-links">
-        
-        <Link to="/"className="btn">HOME</Link>
-        <Link to="/learn"className="btn">LEARN MORE</Link>
-        <Link to="/cart"className="btn">CART</Link>
-        <Link to="/addcloset"className="btn">ADD TO CLOSET</Link>
+
+        <Link to="/" className="btn">HOME</Link>
+        <Link to="/learn" className="btn">LEARN MORE</Link>
+        <Link to="/cart" className="btn">CART</Link>
+        <Link to="/addcloset" className="btn">ADD TO CLOSET</Link>
         <Link to="/signin" className="btn">SIGN IN</Link>
         <Link to="/signup" className="btn">SIGN UP</Link>
       </div>
@@ -45,6 +46,7 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/addcloset" element={<Addcloset />} />
+        <Route path="/makepayment" element={<MpesaPayment />} />
       </Routes>
     </BrowserRouter>
   );
