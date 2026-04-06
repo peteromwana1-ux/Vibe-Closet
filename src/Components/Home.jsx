@@ -61,8 +61,7 @@ const Home = () => {
                 {/* The product details  */}
                 <div className='card-body'>
                   <h5 className='mt-2'>{product.product_name}</h5>
-                  <p >{product.product_description}</p>
-                  <b className='p-4 danger'>$. {product.product_cost}</b><br />
+                  <b className='p-4 danger'>Ksh. {product.product_cost}</b><br />
                   <button className='btn' onClick={() => addToCart(product)}>Add to Cart</button>
                   <button className='btn' onClick={() => navigate("/makepayment", { state: { product } })}>Purchase Now</button>
                 </div>
