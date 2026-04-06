@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
 import LearnMore from "./Components/LearnMore";
@@ -36,7 +36,7 @@ function Navbar() {
 /* ================= MAIN APP ================= */
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -48,7 +48,7 @@ function App() {
         <Route path="/addcloset" element={<Addcloset />} />
         <Route path="/makepayment" element={<MpesaPayment />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
